@@ -1,20 +1,90 @@
-insert into Product values ("p000000001", "와이드 치노 팬츠_베이지", '26000', "al", 'm', "하의", "팬츠", "베이지", 't');
-insert into Product values ("p000000002", "후드 스웨트 집업_그레이", '36000', "fw", 'u', "아우터", "집업", "그레이", 't');
-insert into Product values ("p000000003", "페니로퍼_블랙", '190000', "al", 'm', "하의", "드레스 슈즈", "블랙", 't');
-insert into Product values ("p000000004", "울 라운드 자켓_그레이", '218000', "fw", 'u', "아우터", "코트", "그레이", 't');
-insert into Product values ("p000000005", "터틀넥 티셔츠_블랙", '270000', "fw", 'u', "상의", "티셔츠", "블랙", 't');
-insert into Product values ("p000000006", "플리스 원피스_크림", '86000', "fw", 'w', "원피스", "드레스", "크림", 't');
-insert into Product values ("p000000007", "코튼 오버롤_그린", '158000', "ss", 'w', "원피스", "오버롤", "그린", 't');
-insert into Product values ("p000000008", "울 플리츠 스커트_블랙", '82000', "fw", 'w', "하의", "스커트", "블랙", 'f');
-insert into Product values ("p000000009", "오버핏 스웨트셔츠_그레이", '38000', "ss", 'u', "상의", "티셔츠", "그레이", 't');
-insert into Product values ("p000000010", "와이드 코듀로이 팬츠_크림", '28000', "fw", 'm', "하의", "팬츠", "크림", 't');
-insert into Product values ("p000000011", "옥스포드 셔츠_카키", '20000', "ss", 'm', "상의", "셔츠", "그린", 'f');
-insert into Product values ("p000000012", "카고 하프 팬츠_블랙", '38000', "ss", 'm', "하의", "쇼츠", "블랙", 'f');
-insert into Product values ("p000000013", "러닝슈즈_네이비", '80000', "al", 'w', "신발", "스니커즈", "네이비", 't');
-insert into Product values ("p000000014", "보더 후드_블랙", '30000', "fw", 'm', "상의", "후드", "블랙", 'f');
-insert into Product values ("p000000015", "하이넥 타이 원피스_네이비", '184000', "ss", 'w', "원피스", "드레스", "네이비", 't');
-insert into Product values ("p000000016", "카펜터 데님 팬츠_네이비", '56000', "ss", 'm', "하의", "쇼츠", "네이비", 't');
-insert into Product values ("p000000017", "크루넥 니트_그린", '65000', "fw", 'u', "상의", "니트", "그린", 't');
-insert into Product values ("p000000018", "조리 슬리퍼_블랙", '55000', "al", 'u', "신발", "샌들/슬리퍼", "블랙", 't');
-insert into Product values ("p000000019", "체크 자켓_그레이", '135000', "ss", 'm', "아우터", "자켓", "그레이", 't');
-insert into Product values ("p000000020", "모크넥 니트_그린", '67000', "fw", 'w', "상의", "니트", "그린", 't');
+--------------------------------------------------------
+--  파일이 생성됨 - 수요일-11월-27-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table PRODUCT
+--------------------------------------------------------
+
+  CREATE TABLE "PRODUCT" 
+   (	"PRODUCT_ID" CHAR(10 BYTE), 
+	"PRODUCT_NAME" VARCHAR2(40 BYTE), 
+	"PRICE" NUMBER(*,0), 
+	"SEASON" VARCHAR2(2 BYTE), 
+	"GENDER" CHAR(1 BYTE), 
+	"MAINCATEGORY" VARCHAR2(10 BYTE), 
+	"SUBCATEGORY" VARCHAR2(20 BYTE), 
+	"COLOR" VARCHAR2(10 BYTE), 
+	"ON_SALE" CHAR(1 BYTE)
+   ) ;
+REM INSERTING into PRODUCT
+SET DEFINE OFF;
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000004','울 라운드 자켓_노랑',218000,'fw','u','아우터','자켓','노랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000005','터틀넥 티셔츠_파랑',270000,'fw','u','상의','티셔츠','파랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000006','플리스 원피스_초록',86000,'fw','w','원피스','드레스','초록','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000007','코튼 오버롤_흰색',158000,'ss','w','원피스','오버롤','흰색','f');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000008','울 플리츠 스커트_체크',82000,'fw','w','하의','스커트','기타','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000011','옥스포드 셔츠_빨강',20000,'ss','m','상의','셔츠','빨강','f');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000012','카고 하프 팬츠_노랑',38000,'ss','m','하의','쇼츠','노랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000014','보더 후드_초록',30000,'fw','m','상의','후드','초록','f');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000017','크루넥 니트_검정',65000,'fw','u','상의','니트','검정','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000019','체크 자켓_빨강',135000,'ss','m','아우터','자켓','빨강','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000020','반팔티셔츠_노랑',67000,'fw','w','상의','티셔츠','노랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000003','페니로퍼_빨강',190000,'al','m','신발','드레스 슈즈','빨강','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000013','러닝슈즈_파랑',80000,'al','w','신발','스니커즈','파랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000018','조리 슬리퍼_흰색',55000,'al','u','신발','샌들/슬리퍼','흰색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000001','와이드 치노 팬츠_검정',26000,'al','m','하의','팬츠','검정','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000002','후드 스웨트 집업_흰색',36000,'fw','u','아우터','집업','흰색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000009','오버핏 스웨트셔츠_검정',38000,'ss','u','상의','티셔츠','검정','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000010','와이드 코듀로이 팬츠_흰색',28000,'fw','m','하의','팬츠','흰색','f');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000015','하이넥 타이 원피스_회색',184000,'ss','w','원피스','드레스','회색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000016','카펜터 데님 팬츠_네이비',56000,'ss','m','하의','쇼츠','기타','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000021','유틸리티 쇼츠_파랑',32000,'ss','m','하의','쇼츠','파랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000022','더플코트_초록',210000,'al','u','아우터','코트','초록','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000023','드레스_회색',150000,'fw','w','원피스','드레스','회색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000024','스니커즈_보라',50000,'ss','m','신발','스니커즈','보라','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000025','옥스포드 셔츠_검정',23000,'al','u','상의','셔츠','검정','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000026','유틸리티 팬츠_흰색',82000,'fw','w','하의','팬츠','흰색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000027','숏패딩_빨강',150000,'ss','m','아우터','패딩','빨강','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000028','점프슈트_노랑',98000,'al','u','원피스','오버롤','노랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000029','테슬로퍼_검정',120000,'fw','w','신발','드레스 슈즈','검정','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000030','모크넥 니트_초록',74000,'ss','m','상의','니트','초록','f');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000031','플리츠 스커트_회색',92000,'al','w','하의','스커트','회색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000032','자켓_체크',180000,'fw','u','아우터','자켓','기타','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000033','롱드레스_검정',320000,'ss','w','드레스','티셔츠','검정','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000034','샌들_흰색',95000,'al','m','신발','샌들/슬리퍼','흰색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000035','프린팅 후드_빨강',43000,'ss','u','상의','후드','빨강','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000036','치노 팬츠_노랑',49000,'fw','w','하의','팬츠','노랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000037','후드 집업_파랑',69000,'al','m','아우터','집업','파랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000038','오버롤_초록',190000,'ss','u','원피스','오버롤','초록','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000039','첼시부츠_회색',72000,'fw','w','신발','부츠','회색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000040','하프 티셔츠_보라',23000,'al','m','상의','티셔츠','기타','f');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000041','카고 반바지_검정',42000,'ss','u','하의','쇼츠','검정','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000042','롱코트_흰색',170000,'ss','w','아우터','코트','흰색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000043','물방울 드레스_빨강',156000,'fw','w','원피스','드레스','빨강','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000044','스니커즈_노랑',74000,'al','m','신발','스니커즈','노랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000045','체크 셔츠_파랑',83000,'fw','u','상의','셔츠','파랑','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000046','플레어 스커트_초록',94000,'al','w','하의','스커트','초록','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000047','숏패딩_회색',340000,'ss','u','아우터','패딩','회색','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000048','오버롤_크림',99000,'ss','m','원피스','오버롤','기타','t');
+Insert into PRODUCT (PRODUCT_ID,PRODUCT_NAME,PRICE,SEASON,GENDER,MAINCATEGORY,SUBCATEGORY,COLOR,ON_SALE) values ('p000000049','부츠_검정',176000,'al','m','신발','부츠','검정','f');
+--------------------------------------------------------
+--  DDL for Index SYS_C007330
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C007330" ON "PRODUCT" ("PRODUCT_ID") 
+  ;
+--------------------------------------------------------
+--  Constraints for Table PRODUCT
+--------------------------------------------------------
+
+  ALTER TABLE "PRODUCT" MODIFY ("PRODUCT_ID" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" MODIFY ("PRODUCT_NAME" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" MODIFY ("PRICE" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" MODIFY ("SEASON" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" MODIFY ("GENDER" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" MODIFY ("MAINCATEGORY" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" MODIFY ("SUBCATEGORY" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" MODIFY ("COLOR" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" MODIFY ("ON_SALE" NOT NULL ENABLE);
+  ALTER TABLE "PRODUCT" ADD PRIMARY KEY ("PRODUCT_ID")
+  USING INDEX  ENABLE;
