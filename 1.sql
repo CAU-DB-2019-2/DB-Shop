@@ -1,0 +1,1 @@
+select sum(total_price) from order
